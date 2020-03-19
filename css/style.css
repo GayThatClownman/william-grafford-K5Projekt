@@ -1,3 +1,26 @@
+body{
+    color: black;
+    background-color: lightgray;
+    font-family: 'Trebuchet MS';
+
+}
+
+main{
+    margin: 2rem;
+}
+
+header{
+text-align: center;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px;
+}
+
 p{
-    font-style: Trebuchet MS;
+    font-size: 20px;
 }
