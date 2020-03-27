@@ -17,6 +17,15 @@ nav.navbar{
     height: 100vh;
     position: fixed;
     background-color: #242121;
+    transition: width 200ms;
+}
+
+nav.navbar:hover{
+    width: 18rem;
+}
+
+nav.navbar:hover .link-text{
+    display: block;
 }
 
 ul.nav-ul{
@@ -32,7 +41,37 @@ ul.nav-ul{
 li.nav-item{
     font-size: 24px;
     font-family: 'Trebuchet MS', sans-serif;
+    width: 100%;
 }
+
+a.nav-link{
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    text-decoration: none;
+    filter: grayscale(100%);
+    transition: 400ms;
+}
+
+a.nav-link:hover{
+    filter: grayscale(0%);
+    background-color: #403d3d;
+}
+
+span.link-text{
+    display: none;
+    min-width: 2rem;
+    margin: 4rem;
+    color: lightskyblue;
+}
+
+img.nav-img{
+    clip-path: circle(50%);
+}
+
+/* li.nav-item:last-child{
+    margin-top: auto;
+} */
 
 main{
     padding: 1rem;
