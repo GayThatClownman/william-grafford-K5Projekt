@@ -98,11 +98,11 @@ padding-bottom: 1rem;
 }
 
 h1{
-    font-size: 74px;
+    font-size: 86px;
 }
 
 h2{
-    font-size: 48px;
+    font-size: 56px;
 }
 
 p{
@@ -113,23 +113,23 @@ p{
 .body1{
     display: block;
     min-height: 100%;
-
     margin-bottom: -11rem;
-}
-
-.body1::after{
-    content: "";
-    display: block;
-}
-
-footer, .body1::after{
-    height: 11rem;
 }
 
 .body2, .body3, .body4{
     display: none;
+    min-height: 100%;
+    margin-bottom: -11rem;
 }
 
+.body1::after, .body2::after, .body3::after, .body4::after{
+    content: "";
+    display: block;
+}
+
+footer, .body1::after, .body2::after, .body3::after, .body4::after{
+    height: 11rem;
+}
 
 .footergrid{
     display: grid;
