@@ -110,6 +110,22 @@ p{
     font-family: 'Trebuchet MS';
 }
 
+.body1{
+    display: block;
+    min-height: 100%;
+
+    margin-bottom: -11rem;
+}
+
+.body1::after{
+    content: "";
+    display: block;
+}
+
+footer, .body1::after{
+    height: 11rem;
+}
+
 .body2, .body3, .body4{
     display: none;
 }
@@ -128,12 +144,21 @@ p{
     /* background-color: lightgray; */
     color: lightgray;
     border: solid 0.25vw #3d3c3c;
-    
+    font-size: 1rem;
 }
 
 footer{
     margin-left: 6rem;
     padding: 1rem;
     background-color: #242121;
-    
 }
+
+
+/* Notes */
+/* 
+ + Fixa responsiv layout som inkluderar(@media queries, responsiva mått m.m.):
+   - Main innehåll
+   - Footer
+   - Navbar
+
+*/
